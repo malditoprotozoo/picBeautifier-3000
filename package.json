@@ -1,0 +1,11 @@
+{
+  "name": "picbeautifier-3000",
+  "version": "1.0.0",
+  "description": "picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

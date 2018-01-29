@@ -8,6 +8,10 @@ const objFunctions = {
     } else {
       return false;
     }
+  },
+  replaceNonNumbers: (value) => {
+    let regex = /[a-zA-ZñÑáéíóúÁÉÍÓÚ]/g;
+    return value.replace(regex, '');
   }
 };
 

@@ -107,7 +107,7 @@ const objFunctions = {
     });
   },
   /* hover slide */
-  marginCero: (element, scale) =>{
+  marginZero: (element, scale) =>{
     $(element).css({'margin-left':'0', 'transform':`scale(${scale})`, '-webkit-transform': `scale(${scale})`});
   },
   marginAdd: (element, margin, scale) => {
@@ -118,10 +118,10 @@ const objFunctions = {
     let img = $(selectorName).children()[0];
     objFunctions.marginAdd($(img), margin, scale);
     $(selectorName).hover(function() {
-      let img = $(selectorName).children()[0];
-      objFunctions.marginCero($(img), scale);
+      let img = $(this).children()[0];
+      objFunctions.marginZero($(img), scale);
     }, function() {
-      let img = $(selectorName).children()[0];
+      let img = $(this).children()[0];
       objFunctions.marginAdd($(img), margin, scale);
     });
   },
@@ -143,10 +143,8 @@ const objFunctions = {
   },
   applyCardify: (phaterElement, color) => {
     var img = $(phaterElement).children()[0];
-    if (objFunctions.verifyHasAlt(img)) {
       var text = $(img).attr('alt');
       objFunctions.cardifyStyles(phaterElement, img, color, text);
-    }
   },
   /* función a llamar */
   hoverCardify: (selectorName, color) => {

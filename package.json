@@ -4,8 +4,30 @@
   "description": "picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --reporter nyan"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Victoria Rodríguez, Leticia Rodríguez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malditoprotozoo/picBeautifier-3000.git"
+  },
+  "keywords": [
+    "images",
+    "img",
+    "pics",
+    "pictures",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/malditoprotozoo/picBeautifier-3000/issues"
+  },
+  "homepage": "https://github.com/malditoprotozoo/picBeautifier-3000#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "mocha": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  }
 }

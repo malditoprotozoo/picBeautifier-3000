@@ -9,9 +9,12 @@ const objFunctions = {
       return false;
     }
   },
-  replaceNonNumbers: (value) => {
+  replaceNonNumbers: value => {
     let regex = /[a-zA-ZñÑáéíóúÁÉÍÓÚ]/g;
     return value.replace(regex, '');
+  },
+  addParentheses: str => {
+    return '(' + str + ')';
   }
 };
 

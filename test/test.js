@@ -27,5 +27,12 @@ describe('Verificar que value es un valor que sólo contiene números', () => {
   it('Debe retornar false si el string contiene una letra', () => {
     assert.equal('10', app.replaceNonNumbers('1o0'));
     assert.equal('14', app.replaceNonNumbers('14ñ'));
-  })
+  });
+});
+
+describe('Verificar que una función agrega paréntesis antes y después de un strint', () => {
+  it('Debe retornar el string entregado envuelto en paréntesis', () => {
+    assert.equal('(100%)', app.addParentheses('100%'));
+    assert.equal('(1.5)', app.addParentheses('1.5'));
+  });
 });

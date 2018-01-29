@@ -4,7 +4,7 @@
   "description": "picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test --reporter nyan"
   },
   "author": "Victoria Rodríguez, Leticia Rodríguez",
   "license": "ISC",

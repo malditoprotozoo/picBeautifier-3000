@@ -52,6 +52,7 @@ const objFunctions = {
   },
   /* función a llamar */
   hoverLargeScale: (selectorName, scale) => {
+    $(selectorName).css({'overflow':'hidden'})
     $(selectorName).hover(function() {
       var img = $(this).children();
       objFunctions.largeScale(img, scale);
@@ -63,8 +64,12 @@ const objFunctions = {
   },
   /* efecto zoom out */
   hoverNormalScale: (selectorName, scale) => {
-    objFunctions.largeScale(img, scale);
-    largeScale(img, scale);
+    $(selectorName).css({'overflow':'hidden'})
+    for (let i = 0; i < $(selectorName).length; i++) {
+      let img = $(selectorName)[i];
+      img = $(img).children()[0];
+      objFunctions.largeScale(img, scale);
+    }
     $(selectorName).hover(function() {
       var img = $(this).children();
       objFunctions.normalScale(img, '1');
@@ -83,10 +88,10 @@ const objFunctions = {
   /* función a llamar */
   applyOpacity: (selectorName, value) => {
     $(selectorName).hover(function() {
-      let img = $(selectorName).children();
+      let img = $(this).children();
       objFunctions.changingOpacity(img, value);
     }, function() {
-      let img = $(selectorName).children();
+      let img = $(this).children();
       objFunctions.normalOpacity(img)
     });
   },
@@ -99,15 +104,16 @@ const objFunctions = {
     let img = $(selectorName).children();
     objFunctions.normalOpacity(img);
     $(selectorName).hover(function() {
-      let img = $(selectorName).children();
+      let img = $(this).children();
       objFunctions.colorForOpacity(selectorName, color);
       objFunctions.changingOpacity(img, value);
     }, function() {
+      let img = $(this).children();
       objFunctions.normalOpacity(img);
     });
   },
   /* hover slide */
-  marginCero: (element, scale) =>{
+  marginZero: (element, scale) =>{
     $(element).css({'margin-left':'0', 'transform':`scale(${scale})`, '-webkit-transform': `scale(${scale})`});
   },
   marginAdd: (element, margin, scale) => {
@@ -115,13 +121,17 @@ const objFunctions = {
   },
   /* función a llamar */
   hoverSlide: (selectorName, scale, margin) => { // recomendado 1.3 scale, margin 30
-    let img = $(selectorName).children()[0];
-    objFunctions.marginAdd($(img), margin, scale);
+    $(selectorName).css({'overflow':'hidden'});
+    for (var i = 0; i < $(selectorName).length; i++) {
+      let img = $(selectorName)[i];
+      img = $(img).children()[0];
+      objFunctions.marginAdd($(img), margin, scale);
+    }
     $(selectorName).hover(function() {
-      let img = $(selectorName).children()[0];
-      objFunctions.marginCero($(img), scale);
+      let img = $(this).children()[0];
+      objFunctions.marginZero($(img), scale);
     }, function() {
-      let img = $(selectorName).children()[0];
+      let img = $(this).children()[0];
       objFunctions.marginAdd($(img), margin, scale);
     });
   },
@@ -130,10 +140,10 @@ const objFunctions = {
     if ($(element).children().length > 1) {
       $(element).children()[1].remove();
     }
-    let paragraph = `<figcaption style='text-align:center; color:white; display:block; margin: 20px 15px'>${text}</figcaption>`;
-    $(element).append(paragraph);
+    let paragraph = `<figcaption style='text-align:center; color:white; display:block; padding: 20px 15px; position:absolute; top:0; width:100%'>${text}</figcaption>`;
+    let p = $(element).append(paragraph);
     $(element).css({'background-color': color, 'position':'relative'});
-    $(img).css({'opacity':'.3', 'position':'absolute'})
+    $(img).css({'opacity':'.2'})
   },
   cardifyNoStyles: (element) => {
     let p = $(element).children()[1];
@@ -143,13 +153,13 @@ const objFunctions = {
   },
   applyCardify: (phaterElement, color) => {
     var img = $(phaterElement).children()[0];
-    if (objFunctions.verifyHasAlt(img)) {
-      var text = $(img).attr('alt');
-      objFunctions.cardifyStyles(phaterElement, img, color, text);
-    }
+    var text = $(img).attr('alt');
+    objFunctions.cardifyStyles(phaterElement, img, color, text);
   },
   /* función a llamar */
+  /*instrucciones: el contenedor debe tener la altura que se desea de la imagen*/
   hoverCardify: (selectorName, color) => {
+    $(selectorName).css({'overflow':'hidden'})
     $(selectorName).hover(function() {
       objFunctions.applyCardify($(this), color);
     }, function() {

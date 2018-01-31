@@ -1,4 +1,4 @@
-<center><h1><img src="title.png" style=""></h1></center>
+<center><h1><img src="logo.svg" style=""></h1></center>
 
 _Read this in other languages: [English](readme.en.md), [Portuguese](readme.br.md)._
 

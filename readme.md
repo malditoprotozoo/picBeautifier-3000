@@ -12,9 +12,11 @@ picBeautifier 3000 es una librería de JavaScript que servirá para darle múlti
 
 ### Instalación
 
-* CDN
-  Si quieres asegurarte de mantenerte al día con futuras actuaizaciones, puedes incluir la librería directamente con el siguiente enlace.
-  ```https://github.com/malditoprotozoo/picBeautifier-3000/blob/dev/src/app.js```
+<ul>
+  <li>CDN</li>
+  <p>Si quieres asegurarte de mantenerte al día con futuras actuaizaciones, puedes incluir la librería directamente con el siguiente enlace.</p>
+  <p>```https://github.com/malditoprotozoo/picBeautifier-3000/blob/dev/src/app.js```</p>
+</ul>
 
 ## El Reto
 

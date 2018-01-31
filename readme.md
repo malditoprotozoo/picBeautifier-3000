@@ -1,6 +1,8 @@
 # Librería picBeautifier 3000
 
-picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla.
+<center><img src="logo.svg" width="200px"></center>
+
+picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla. Te ahorrará muchas líneas de código en CSS gracias a nuestras eficientes funciones.
 
 ## Instalación
 
@@ -24,6 +26,6 @@ picBeautifier 3000 es una librería de JavaScript que servirá para darle múlti
 Para esta librería utilizaremos las siguientes dependencias de NPM:
 
 * Dependencias de desarrollo
- - ESLint 4.15.0
+ -- ESLint 4.15.0
 * Dependencias de producción
- - jQuery 3.2.1
+ -- jQuery 3.2.1

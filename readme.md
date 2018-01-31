@@ -4,9 +4,17 @@ _Read this in other languages: [English](readme.en.md), [Portuguese](readme.br.m
 
 picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla. Te ahorrará muchas líneas de código en CSS gracias a nuestras eficientes funciones.
 
-## Instalación
+## Primeros Pasos
 
-## Uso
+### Requerimientos
+
+* [jQuery](https://jquery.com/download/)
+
+### Instalación
+
+* CDN
+⋅⋅⋅ Si quieres asegurarte de mantenerte al día con futuras actuaizaciones, puedes incluir la librería directamente con el siguiente enlace.
+⋅⋅⋅ ```https://github.com/malditoprotozoo/picBeautifier-3000/blob/dev/src/app.js```
 
 ## El Reto
 

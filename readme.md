@@ -1,5 +1,7 @@
 <center><h1><img src="title.png" style=""></h1></center>
 
+_Read this in other languages: [English](readme.en.md), [Portuguese](readme.br.md)._
+
 picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla. Te ahorrará muchas líneas de código en CSS gracias a nuestras eficientes funciones.
 
 ## Instalación

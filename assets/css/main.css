@@ -26,6 +26,11 @@ header ul h1 {
   float: left;
 }
 
+.logo-img {
+  width: 190px;
+  height: auto;
+}
+
 .github {
   float: right;
 }
@@ -57,7 +62,7 @@ figure {
   height: 230px;
 }
 
-img {
+img:not(.logo-img) {
   object-fit: cover;
 }
 
@@ -221,7 +226,7 @@ figure {
   overflow: hidden;
 }
 
-img {
+img:not(.logo-img) {
   object-fit: cover;
   cursor: pointer;
 }

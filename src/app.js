@@ -1,7 +1,7 @@
 const objFunctions = {
   //Aplicable sólo a filtros con porcentajes
   verifyFilter: function(filter, value) {
-    let arrFilters = ['brightness', 'contrast', 'greyscale', 'invert', 'opacity', 'sepia'];
+    let arrFilters = ['brightness', 'contrast', 'grayscale', 'invert', 'opacity', 'sepia'];
     var result;
     if (arrFilters.indexOf(filter.toLowerCase()) >= 0 && value >= 0 && value <= 100) {
       return true;
@@ -16,6 +16,10 @@ const objFunctions = {
   addParentheses: str => {
     return '(' + str + ')';
   },
+  /* styles for figure or image container */
+  stylesForFigure: (selectorName) => {
+    $(selectorName).css({'width' : '100%', 'height': 'auto', 'overflow': 'hidden'});
+  },
   /*efectos*/
   limitWidthImg: (selectorName, size) => {
     $(selectorName).css({'width': size});
@@ -29,8 +33,8 @@ const objFunctions = {
   applyFilteryHover: (selectorName, filter, value) => {
     if (objFunctions.verifyFilter(filter, value) === true) {
       $(selectorName).hover(function() {
-        $(this).css({'filter': filter + `(` + value + `)`});
-        $(this).css({'-webkit-filter': filter + `(` + value + `)`});
+        $(this).css({'filter': `${filter}(${value}%)`});
+        $(this).css({'-webkit-filter': `${filter}(${value}%)`});
       }, function() {
         $(this).css({'filter': 'none'});
         $(this).css({'-webkit-filter': 'none'});
@@ -43,6 +47,20 @@ const objFunctions = {
       $(selectorName).css({'-webkit-filter': filter + `(` + value + `)`});
     }
   },
+  removeFilter: (selectorName) => {
+    $(selectorName).css({'filter': 'none'});
+    $(selectorName).css({'-webkit-filter': 'none'});
+  },
+  removeFilteryHover: (selectorName, filter, value) => {
+    if (objFunctions.verifyFilter(filter, value) === true) {
+      objFunctions.applyFilter(selectorName, filter, value);
+      $(selectorName).hover(function() {
+        objFunctions.removeFilter($(this));
+      }, function() {
+        objFunctions.applyFilter($(this), filter, value);
+      })
+    }
+  },
   /* efecto zoom */
   largeScale: (selectorName, scale) => {
     $(selectorName).css({'transform' : `scale(${scale})` , '-webkit-transform' : `scale(${scale})`});
@@ -52,7 +70,7 @@ const objFunctions = {
   },
   /* función a llamar */
   hoverLargeScale: (selectorName, scale) => {
-    $(selectorName).css({'overflow':'hidden'})
+    objFunctions.stylesForFigure($(selectorName));
     $(selectorName).hover(function() {
       var img = $(this).children();
       objFunctions.largeScale(img, scale);
@@ -64,7 +82,7 @@ const objFunctions = {
   },
   /* efecto zoom out */
   hoverNormalScale: (selectorName, scale) => {
-    $(selectorName).css({'overflow':'hidden'})
+    objFunctions.stylesForFigure($(selectorName));
     for (let i = 0; i < $(selectorName).length; i++) {
       let img = $(selectorName)[i];
       img = $(img).children()[0];
@@ -87,6 +105,7 @@ const objFunctions = {
   },
   /* función a llamar */
   applyOpacity: (selectorName, value) => {
+    objFunctions.stylesForFigure($(selectorName));
     $(selectorName).hover(function() {
       let img = $(this).children();
       objFunctions.changingOpacity(img, value);
@@ -101,6 +120,7 @@ const objFunctions = {
   },
   /* función a llamar */
   applyColorOpacity: (selectorName, color, value) => {
+    objFunctions.stylesForFigure($(selectorName));
     let img = $(selectorName).children();
     objFunctions.normalOpacity(img);
     $(selectorName).hover(function() {
@@ -121,7 +141,7 @@ const objFunctions = {
   },
   /* función a llamar */
   hoverSlide: (selectorName, scale, margin) => { // recomendado 1.3 scale, margin 30
-    $(selectorName).css({'overflow':'hidden'});
+    objFunctions.stylesForFigure($(selectorName));
     for (var i = 0; i < $(selectorName).length; i++) {
       let img = $(selectorName)[i];
       img = $(img).children()[0];
@@ -159,7 +179,7 @@ const objFunctions = {
   /* función a llamar */
   /*instrucciones: el contenedor debe tener la altura que se desea de la imagen*/
   hoverCardify: (selectorName, color) => {
-    $(selectorName).css({'overflow':'hidden'})
+    objFunctions.stylesForFigure($(selectorName));
     $(selectorName).hover(function() {
       objFunctions.applyCardify($(this), color);
     }, function() {

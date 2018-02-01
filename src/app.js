@@ -185,6 +185,22 @@ const objFunctions = {
     }, function() {
       objFunctions.cardifyNoStyles($(this));
     });
+  },
+  addOverlay: (container, width, colorBackground, colorText) => {
+    objFunctions.limitWidthImg($(container).children(), '100%');
+    $(container).css({'position':'relative', 'width': width});
+    let img = $(container).children();
+    let text = $(img).attr('alt');
+    let overlay = `<div class="overlay" style="position:absolute;bottom:100%;left:0;right:0;
+    background-color:${colorBackground};overflow:hidden;width:100%;height:0;transition:.5s ease;
+    color:${colorText};">
+    <div class="text" style="position:absolute;top:50%;left:50%;text-align:center;">${text}<div></div>`;
+    $(container).append(overlay);
+    $(container).hover(function() {
+      $('.overlay').css({'bottom':'0', 'height':'100%'});
+    }, function() {
+      $('.overlay').css({'bottom':'100%', 'height':'0'});
+    });
   }
 };
 

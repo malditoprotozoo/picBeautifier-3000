@@ -5,36 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pic Beautifier Demo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Damion|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <div id="main-container" class="container">
-      <header>
+    <header>
+      <nav class="mini-nav">
         <ul>
-          <li class="logo">
-            <h1>picBeautifier-3000</h1>
+          <li class="fork toUp">
+            Fork us and Download on Github
           </li>
-          <li class="github">
-            instrucciones de uso en: <a href="https://github.com/malditoprotozoo/picBeautifier-3000"><i class="fab fa-github-square"></i></a>
+          <li class="howTo">
+            <a href="https://github.com/malditoprotozoo/picBeautifier-3000" class="toUp">How to use<i class="fas fa-code"></i></a>
           </li>
         </ul>
-      </header>
+      </nav>
+        <div class="logo">
+          <img src="assets/img/logo-vector.svg" alt="picBeautifier-3000" class="logo-img">
+        </div>
+    </header>
+    <div id="main-container">
       <div class="row description">
+        <hr>
         <div class="col-lg-10 offset-lg-1 text-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempora ipsa magnam atque velit, cumque, at fugit rerum debitis esse ipsam distinctio minus facilis, illo adipisci eum temporibus odio voluptate!</p>
         </div>
+        <hr>
       </div>
       <div class="row buttons">
         <div class="col-lg-12">
-          <ul>
-            <li class="btn-eff">Zoom In</li>
-            <li class="btn-eff">Zoom Out</li>
-            <li class="btn-eff">Opacity</li>
-            <li class="btn-eff">Color Opacity</li>
-            <li class="btn-eff">Slide</li>
-            <li class="btn-eff">B/W Filter</li>
-            <li class="btn-eff">Sepia Filter</li>
-            <li class="btn-eff">Alt Text</li>
+          <ul class="toUp">
+            <li class="btn-eff zoom-in active">Zoom In</li>
+            <li class="btn-eff zoom-out">Zoom Out</li>
+            <li class="btn-eff opacity">Opacity</li>
+            <li class="btn-eff color-opacity">Color Opacity</li>
+            <li class="btn-eff slide">Slide</li>
+            <li class="btn-eff bw-filter">B/W Filter</li>
+            <li class="btn-eff sepia-filter">Sepia Filter</li>
+            <li class="btn-eff alt-text">Alt Text</li>
           </ul>
         </div>
       </div>
@@ -104,8 +113,41 @@
           </figure>
         </div>
       </section>
-      <!-- hover cardify -->
-      <section class="row images cardify">
+      <!-- opacity -->
+      <section class="row images opacity">
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-one.jpg" alt="Gato Uno">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-two.jpg" alt="Gato Dos">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-three.jpg" alt="Gato Tres">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-four.jpg" alt="Gato Cuatro">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-five.jpg" alt="Gato Cinco">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-six.jpg" alt="Gato Seis">
+          </figure>
+        </div>
+      </section>
+      <!-- color opacity -->
+      <section class="row images color-opacity">
         <div class="col-lg-4">
           <figure>
             <img src="assets/img/cat-one.jpg" alt="Gato Uno">
@@ -170,10 +212,110 @@
           </figure>
         </div>
       </section>
+      <!-- b/w filter -->
+      <section class="row images bw-filter">
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-one.jpg" alt="Gato Uno">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-two.jpg" alt="Gato Dos">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-three.jpg" alt="Gato Tres">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-four.jpg" alt="Gato Cuatro" class="severla">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-five.jpg" alt="Gato Cinco" class="severla">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-six.jpg" alt="Gato Seis" class="severla">
+          </figure>
+        </div>
+      </section>
+      <!-- sepia filter -->
+      <section class="row images sepia-filter">
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-one.jpg" alt="Gato Uno">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-two.jpg" alt="Gato Dos">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-three.jpg" alt="Gato Tres">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-four.jpg" alt="Gato Cuatro" class="severla">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-five.jpg" alt="Gato Cinco" class="severla">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-six.jpg" alt="Gato Seis" class="severla">
+          </figure>
+        </div>
+      </section>
+      <!-- alt text -->
+      <section class="row images alt-text">
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-one.jpg" alt="Gato Uno">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-two.jpg" alt="Gato Dos">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-three.jpg" alt="Gato Tres">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-four.jpg" alt="Gato Cuatro">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-five.jpg" alt="Gato Cinco">
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure>
+            <img src="assets/img/cat-six.jpg" alt="Gato Seis">
+          </figure>
+        </div>
+      </section>
     </div>
     
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- app y librería -->

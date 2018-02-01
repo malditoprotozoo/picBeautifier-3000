@@ -22,10 +22,6 @@ body {
 }
 
 /* header */
-header {
-
-}
-
 header ul {
 list-style: none;
 margin: 0;
@@ -34,7 +30,7 @@ height: 70px;
 }
 
 header nav {
-  padding: 0 10px;
+  padding: 0 20px;
   height: 20px;
   background-color: #7D1935;
   font-size: 12px;
@@ -45,7 +41,7 @@ header nav li {
   display: inline-block;
 }
 
-.fork {
+.library {
   float: left;
 }
 
@@ -55,8 +51,18 @@ header nav li {
 
 .howTo a {
   color: white;
+  text-decoration: underline;
 }
 
+.howTo a:hover {
+  text-decoration: none;
+}
+
+.toUp {
+  text-transform: uppercase;
+}
+
+/* logo */
 .logo {
   position: relative;
   padding: 25px 0 10px 0;
@@ -64,32 +70,12 @@ header nav li {
 }
 
 .logo-img {
-  width: 230px;
+  width: 240px;
   height: auto;
 }
 
-.toUp {
-  text-transform: uppercase;
-}
-
-/*description*/
-.description {
-  color: #6A3775;
-  padding: 20px 0 0 0;
-  display: none;
-}
-.description hr {
-  display: none;
-  width: 100%;
-  border: 0;
-  height: 1px;
-  background: #FFFFAA;
-  background-image: linear-gradient(to right, #FF6EA9, #FFFFAA, #FF6EA9);
-}
-
-.description p {
-  padding: 20px 0;
-  margin: 0;
+.logo-img:hover {
+  opacity: .7;
 }
 
 /* botones */
@@ -105,7 +91,7 @@ header nav li {
 }
 
 .row.buttons ul li {
-  color: #4A96AD; /*#FFCCBB;*/
+  color: #4A96AD;
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
@@ -124,7 +110,7 @@ header nav li {
 
 .row.buttons ul li:hover {
   cursor: pointer;
-  border: 2px solid #4A96AD;/*#2A6D81;*/
+  border: 2px solid #4A96AD;
   position: relative;
   background-color: #4A96AD;
   color: white;
@@ -141,22 +127,7 @@ img {
   cursor: pointer;
 }
 
-/* paleta de colores
- * rosa opaco #DE5285
- * rosa mora #6B003A
- * fucsia #F01D7A
- * rosa #FF6EA9
- * amarillo #FFFFAA
- * rosa pastel #FFCCBB
- * strong yellow #F7F779
- * rosa mora opaco #6A3775
- * rasperry #6B003A
-
- -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
- */
-
- /*scrollbar*/
-
+/*scrollbar*/
 ::-webkit-scrollbar-track {
   border-left: 1px solid #7D1935;
   border-right: 1px solid #7D1935;
@@ -170,8 +141,4 @@ img {
 
 ::-webkit-scrollbar-thumb {
   background-color: #7D1935;
-}
-
-.hidden {
-  display: none;
 }

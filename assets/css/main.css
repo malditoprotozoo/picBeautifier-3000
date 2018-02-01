@@ -229,8 +229,8 @@ figure {
 img:not(.logo-img) {
   object-fit: cover;
   cursor: pointer;
-}
 
+}
 /* paleta de colores
  * rosa opaco #DE5285
  * rosa mora #6B003A

@@ -1,5 +1,7 @@
 const objFunctions = {
-  //Aplicable sólo a filtros con porcentajes
+  /**
+   * Aplicable sólo a filtros con porcentajes
+   */
   verifyFilter: function(filter, value) {
     let arrFilters = ['brightness', 'contrast', 'grayscale', 'invert', 'opacity', 'sepia'];
     var result;
@@ -33,6 +35,7 @@ const objFunctions = {
   applyFilteryHover: (selectorName, filter, value) => {
     if (objFunctions.verifyFilter(filter, value) === true) {
       $(selectorName).hover(function() {
+        console.log(filter);
         $(this).css({'filter': `${filter}(${value}%)`});
         $(this).css({'-webkit-filter': `${filter}(${value}%)`});
       }, function() {
@@ -160,10 +163,10 @@ const objFunctions = {
     if ($(element).children().length > 1) {
       $(element).children()[1].remove();
     }
-    let paragraph = `<figcaption style='text-align:center; color:white; display:block; padding: 20px 15px; position:absolute; top:0; width:100%'>${text}</figcaption>`;
+    let paragraph = `<figcaption style='font-size: 18px;font-weight:400;text-transform: uppercase;text-align:center; color:white; display:block; padding: 0 15px; position:absolute; top:40%; width:100%;'>${text}</figcaption>`;
     let p = $(element).append(paragraph);
     $(element).css({'background-color': color, 'position':'relative'});
-    $(img).css({'opacity':'.2'})
+    $(img).css({'opacity':'.1'})
   },
   cardifyNoStyles: (element) => {
     let p = $(element).children()[1];
@@ -187,19 +190,28 @@ const objFunctions = {
     });
   },
   addOverlay: (container, width, colorBackground, colorText) => {
+    console.log($(container));
     objFunctions.limitWidthImg($(container).children(), '100%');
     $(container).css({'position':'relative', 'width': width});
-    let img = $(container).children();
-    let text = $(img).attr('alt');
-    let overlay = `<div class="overlay" style="position:absolute;bottom:100%;left:0;right:0;
-    background-color:${colorBackground};overflow:hidden;width:100%;height:0;transition:.5s ease;
-    color:${colorText};">
-    <div class="text" style="position:absolute;top:50%;left:50%;text-align:center;">${text}<div></div>`;
-    $(container).append(overlay);
+    for (let i = 0; i < container.length; i++) {
+      let img = $(container)[i]
+      img = $(img).children()[0];
+      console.log(img);
+      let text = $(img).attr('alt');
+      console.log(text);
+      let overlayStyle = `<div class="overlay-style" style="position:absolute;bottom:100%;left:0;right:0;
+      background-color:${colorBackground};overflow:hidden;width:100%;height:0;transition:.5s ease;
+      color:${colorText};">
+      <p class="text" style="font-weight:600;position:absolute; text-align:center; width:100%; top:40%;text-transform: uppercase;">${text}</p></div>`;
+      let containerIndex = $(container)[i];
+      $(containerIndex).append(overlayStyle);
+    }
     $(container).hover(function() {
-      $('.overlay').css({'bottom':'0', 'height':'100%'});
+      let secondBox = $(this).children()[1];
+      $(secondBox).css({'bottom':'0', 'height':'100%'});
     }, function() {
-      $('.overlay').css({'bottom':'100%', 'height':'0'});
+      let secondBox = $(this).children()[1];
+      $(secondBox).css({'bottom':'100%', 'height':'0'});
     });
   }
 };

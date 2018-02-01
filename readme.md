@@ -1,7 +1,7 @@
-<center><h1><img src="logo-vector.svg" style=""></h1></center>
+<h1 align="center"><img src="logo-vector.svg" style=""></h1>
 
 <p align="center">
-<a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-badges.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/built-with-resentment.svg" alt="forthebadge" height="30px"></a>
+<a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-badges.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/built-with-resentment.svg" alt="forthebadge" height="30px"></a><br>
 <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/powered-by-electricity.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge" height="30px"></a>
 </p>
 

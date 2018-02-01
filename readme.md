@@ -1,6 +1,8 @@
 <h1 align="center"><img src="logo-vector.svg" style=""></h1>
 
 <p align="center">
+<a href="https://shields.io/"><img src="https://img.shields.io/github/contributors/malditoprotozoo/picBeautifier-3000.svg?style=for-the-badge" alt="Contributors" height="30px"></a> <a href="https://shields.io/"><img src="https://img.shields.io/github/issues/malditoprotozoo/picBeautifier-3000.svg?style=for-the-badge" alt="Issues" height="30px"></a> <a href="https://shields.io/"><img src="https://img.shields.io/github/languages/top/malditoprotozoo/picBeautifier-3000.svg?style=for-the-badge" alt="Top Language" height="30px"></a>
+<br>
 <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-badges.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/built-with-resentment.svg" alt="forthebadge" height="30px"></a><br>
 <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/powered-by-electricity.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge" height="30px"></a>
 </p>

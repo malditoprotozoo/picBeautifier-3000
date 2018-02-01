@@ -20,9 +20,11 @@ picBeautifier 3000 es una librería de JavaScript que servirá para darle múlti
 ### Instalación
 
 <ul>
+  <li>jQuery</li>
+  <p>Para usar esta librería, necesitas <a href="https://jquery.com/download/">jQuery</a>. Asegurate de incluirlo justo antes de la etiqueta ```</body>```.</p>
   <li>CDN</li>
   <p>Si quieres asegurarte de mantenerte al día con futuras actuaizaciones, puedes incluir la librería directamente con el siguiente enlace.</p>
-  <p><code>https://github.com/malditoprotozoo/picBeautifier-3000/blob/dev/src/app.js</code></p>
+  ```<script src="https://cdn.rawgit.com/malditoprotozoo/picBeautifier-3000/dev/src/app.js"></script>```
 </ul>
 
 ## El Reto

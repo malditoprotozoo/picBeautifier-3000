@@ -27,24 +27,10 @@ picBeautifier 3000 es una librería de JavaScript que servirá para darle múlti
   <code>https://cdn.rawgit.com/malditoprotozoo/picBeautifier-3000/dev/src/app.js</code>
 </ul>
 
-## El Reto
-
-> El objetivo central de este curso es construir una librería (library) que responda a los requisitos de uno de los retos detallados más abajo.
-
-> El reto se hará en grupos de dos alumnas y será presentado al final del curso en una demo al resto de la clase. A lo largo del curso tus instructorxs te guiarán en el proceso así como tus compañeras.
-
-## Metodología de trabajo
-
-* Se utilizará Trello como herramienta de planificación.
-
-* Slack será usado para mantener la comunicación entre el equipo.
-
-* Se utilizará el método SCRUM para mantener una buena organización y mejorar los tiempos de entrega del producto.
-
 ## Requerimientos Técnicos
-Para esta librería utilizaremos las siguientes dependencias de NPM:
+Para esta librería utilizamos las siguientes tecnologías:
 
-* Dependencias de desarrollo
- -- ESLint 4.15.0
-* Dependencias de producción
- -- jQuery 3.2.1
++ Dependencias de desarrollo
+ - ESLint 4.15.0
++ Dependencias de producción
+ - jQuery 3.2.1

@@ -1,5 +1,8 @@
 <center><h1><img src="logo.svg" style=""></h1></center>
 
+<center><a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-badges.svg" alt="forthebadge" style="height:30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/built-with-resentment.svg" alt="forthebadge" style="height:30px"></a>
+<a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/powered-by-electricity.svg" alt="forthebadge" style="height:30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge" style="height:30px"></a></center>
+
 _Read this in other languages: [English](readme.en.md), [Portuguese](readme.br.md)._
 
 picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla. Te ahorrará muchas líneas de código en CSS gracias a nuestras eficientes funciones.

@@ -11,6 +11,8 @@ _Read this in other languages: [Spanish](readme.md)._
 
 picBeautifier 3000 is a Javascript library that will facilitate image manipulation, so you can add beautiful effects with just a few lines of code.
 
+Checkout our demo [here](https://malditoprotozoo.github.io/picBeautifier-3000/index.html)!
+
 ## Getting Started
 
 ### Prerequisites

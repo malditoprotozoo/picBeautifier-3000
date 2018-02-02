@@ -34,11 +34,13 @@ header nav {
   height: 20px;
   background-color: #7D1935;
   font-size: 12px;
+  font-family: 'Ubuntu Condensed', sans-serif;
   color: white;
 }
 
 header nav li {
   display: inline-block;
+  line-height: 20px;
 }
 
 .library {
@@ -47,6 +49,7 @@ header nav li {
 
 .howTo {
   float: right;
+  padding: 0 5px;
 }
 
 .howTo a {

@@ -24,9 +24,11 @@ picBeautifier 3000 is a Javascript library that will facilitate image manipulati
 
 + CDN
 	- If you want to have our latest features, add this link on your ```script```.
+
 	```https://cdn.rawgit.com/malditoprotozoo/picBeautifier-3000/dev/src/app.js```
 + Download
 	- If you rather to stay with our stable version, clone this library onto your project and add the following link onto your script.
+
 	```../src/app.js```
 
 ## Built With

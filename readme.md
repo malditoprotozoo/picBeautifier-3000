@@ -31,7 +31,7 @@ picBeautifier 3000 is a Javascript library that will facilitate image manipulati
 
 	```../src/app.js```
 
-###Usage
+### Usage
 
 You just need to add to your Javascript our functions and use your own classes to apply the effects. Example:
 

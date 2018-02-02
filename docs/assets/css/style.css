@@ -1,0 +1,83 @@
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background: #F5F3EE;
+}
+
+nav {
+  padding: 0 20px;
+  height: 20px;
+  background-color: #7D1935;
+  font-size: 12px;
+  color: white;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+height: 70px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.library {
+  float: left;
+}
+
+.howTo {
+  float: right;
+}
+
+.howTo a {
+  color: white;
+  text-decoration: underline;
+}
+
+.howTo a:hover {
+  text-decoration: none;
+}
+
+.toUp {
+  text-transform: uppercase;
+}
+
+
+#sidebar {
+  background: #494d55;
+  text-align: center;
+}
+
+#logo {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.selection {
+  color: white;
+  font-size: 14px;
+}
+
+.selector {
+  font-family: 'Ubuntu Monospace', monospace;
+  color: white;
+  font-size: 11px;
+}
+
+#welcome {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.card {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.card-header {
+  font-weight: 700;
+}
+
+.card-body p {
+  font-weight: 400;
+}

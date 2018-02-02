@@ -2,18 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Documentation</title>
   <link rel="icon" type="image/png" href="../assets/img/favicomatic/favicon-32x32.png" sizes="32x32"/>
   <link rel="icon" type="image/png" href="../assets/img/favicomatic/favicon-16x16.png" sizes="16x16"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu+Mono:400,700|Ubuntu:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+  <body>
+    <nav class="mini-nav">
+      <ul>
+        <li class="library toUp">
+          <i class="fas fa-book"></i> A library for hover effects on images
+        </li>
+        <li class="howTo">
+          <i class="fas fa-chevron-left"></i> <a href="https://github.com/malditoprotozoo/picBeautifier-3000" class="toUp">Repository</a> <i class="fas fa-chevron-right"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid" id="main-container">
+      <div class="row">
+        <div class="col-12 col-lg-3" id="sidebar">
+          <h1>
+            <img src="../assets/img/logo-white.svg" alt="Logo" id="logo">
+          </h1>
+          <p>
+            <a href="#cardify-effects" data-toggle="collapse" aria-expanded="false" aria-controls="select-lang" class="selection toUp">Alt Text</a>
+          </p>
+          <div class="collapse" id="cardify-effects">
+            <p class="selector">Cardify</p>
+            <p class="selector">Overlay</p>
+          </div>
+          <p>
+            <a href="#filter-effects" data-toggle="collapse" aria-expanded="false" aria-controls="select-lang" class="selection toUp">Filters</a>
+          </p>
+          <div class="collapse" id="filter-effects">
+            <p class="selector">Apply</p>
+            <p class="selector">Remove</p>
+          </div>
+          <p>
+            <a href="#zoom-effects" data-toggle="collapse" aria-expanded="false" aria-controls="select-lang" class="selection toUp">Zoom</a>
+          </p>
+          <div class="collapse" id="zoom-effects">
+            <p class="selector">Zoom In</p>
+            <p class="selector">Zoom Out</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9" id="displayer">
+          <div class="card" id="welcome">
+            <div class="card-header">Welcome</div>
+            <div class="card-body">
+              <p>We hope you like our library :)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/malditoprotozoo/picBeautifier-3000/dev/src/app.js"></script>
   <script src="assets/js/app.js"></script>
-</body>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </body>
 </html>

@@ -11,9 +11,22 @@ const documentation = {
   'overlay': {
     title: `Overlay`,
     description: `Displays an overlay with the alt attribute inside.`,
-    function: ``
+    function: `objFunctions.addOverlay(container, width, colorBackground, colorText)`,
+    use: `You must choose four parameters: a parent element of all the images you want yo apply this effect, a width for such element,
+    a background color for the overlay and the color of your text.`,
+    important: `The parent element must be a class or a tag, does not works with IDs`,
+    example: `<figure class="overlay" onmouseover="objFunctions.addOverlay(this, '100%', '#7d2535', 'white')"><img src="assets/img/akane.jpg" alt="Akane Sleeping" width="100%"></figure>`
   },
-  'apply': {},
+  'apply': {
+    title: 'Apply Filter',
+    description: `Apply any CSS filter that requires a percentage value, like: brightness, contrast, grayscale,
+    invert, opacity and sepia.`,
+    function: `objFunctions.applyFilteryHover(selectorName, filter, value);`,
+    use: `You must choose three parameters: a parent element of all the images you want yo apply this effect, a filter
+    and a percentage value`,
+    important: `The parent element must be a class or a tag, does not works with IDs`,
+    example: `<figure class="apply-filter" onmouseover="objFunctions.applyFilteryHover(this, 'sepia', '100%')"><img src="assets/img/akane.jpg" alt="Akane Sleeping" width="100%"></figure>`
+  },
   'remove': {},
   'zoom in': {
     title: `Zoom In`,

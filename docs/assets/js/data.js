@@ -22,12 +22,19 @@ const documentation = {
     description: `Apply any CSS filter that requires a percentage value, like: brightness, contrast, grayscale,
     invert, opacity and sepia.`,
     function: `objFunctions.applyFilteryHover(selectorName, filter, value);`,
-    use: `You must choose three parameters: a parent element of all the images you want yo apply this effect, a filter
+    use: `You must choose three parameters: an image class or the img tag, a filter
     and a percentage value`,
-    important: `The parent element must be a class or a tag, does not works with IDs`,
+    important: `This doesn't work with containers!`,
     example: `<figure class="apply-filter" onmouseover="objFunctions.applyFilteryHover(this, 'sepia', '100%')"><img src="assets/img/akane.jpg" alt="Akane Sleeping" width="100%"></figure>`
   },
-  'remove': {},
+  'remove': {
+    title: 'Remove Filter',
+    description: 'When you have images with filters, this functions takes it out on hover',
+    function: ``,
+    use: ``,
+    important: ``,
+    example: ``
+  },
   'zoom in': {
     title: `Zoom In`,
     description: `Add a zoom effect to image.`,

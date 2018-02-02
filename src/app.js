@@ -35,7 +35,6 @@ const objFunctions = {
   applyFilteryHover: (selectorName, filter, value) => {
     if (objFunctions.verifyFilter(filter, value) === true) {
       $(selectorName).hover(function() {
-        console.log(filter);
         $(this).css({'filter': `${filter}(${value}%)`});
         $(this).css({'-webkit-filter': `${filter}(${value}%)`});
       }, function() {
@@ -190,15 +189,12 @@ const objFunctions = {
     });
   },
   addOverlay: (container, width, colorBackground, colorText) => {
-    console.log($(container));
     objFunctions.limitWidthImg($(container).children(), '100%');
     $(container).css({'position':'relative', 'width': width});
     for (let i = 0; i < container.length; i++) {
       let img = $(container)[i]
       img = $(img).children()[0];
-      console.log(img);
       let text = $(img).attr('alt');
-      console.log(text);
       let overlayStyle = `<div class="overlay-style" style="position:absolute;bottom:100%;left:0;right:0;
       background-color:${colorBackground};overflow:hidden;width:100%;height:0;transition:.5s ease;
       color:${colorText};">

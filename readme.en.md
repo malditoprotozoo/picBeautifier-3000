@@ -7,30 +7,30 @@
 <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/powered-by-electricity.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge" height="30px"></a>
 </p>
 
-_Read this in other languages: [English](readme.en.md)._
+_Read this in other languages: [Spanish](readme.md)._
 
-picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla. Te ahorrará muchas líneas de código en CSS gracias a nuestras eficientes funciones.
+picBeautifier 3000 is a Javascript library that will facilitate image manipulation, so you can add beautiful effects with just a few lines of code.
 
-## Primeros Pasos
+## Getting Started
 
-### Requerimientos
+### Prerequisites
 
 * [jQuery](https://jquery.com/download/)
 
-### Instalación
+### Installation
 
 <ul>
   <li>jQuery</li>
-  <p>Para usar esta librería, necesitas <a href="https://jquery.com/download/">jQuery</a>. Asegurate de incluirlo justo antes de la etiqueta de cierre de <code>body</code>.</p>
+  <p>This library uses <a href="https://jquery.com/download/">jQuery</a>, so you need to added it on your project.</p>
   <li>CDN</li>
-  <p>Si quieres asegurarte de mantenerte al día con futuras actuaizaciones, puedes incluir la librería directamente con el siguiente enlace.</p>
+  <p>If you want to have our latest features, add this link on your <code>script</code>.</p>
   <code>https://cdn.rawgit.com/malditoprotozoo/picBeautifier-3000/dev/src/app.js</code>
 </ul>
 
-## Requerimientos Técnicos
-Para esta librería utilizamos las siguientes tecnologías:
+## Built With
+We used the following technologies:
 
-+ Dependencias de desarrollo
-	- ESLint 4.15.0
-+ Dependencias de producción
-	- jQuery 3.2.1
++ Development Dependencies
+  - ESLint 4.15.0
++ Production Dependencies
+  - jQuery 3.2.1

@@ -30,10 +30,11 @@ const documentation = {
   'remove': {
     title: 'Remove Filter',
     description: 'When you have images with filters, this functions takes it out on hover',
-    function: ``,
-    use: ``,
-    important: ``,
-    example: ``
+    function: `objFunctions.removeFilteryHover(selectorName, filter, value)`,
+    use: `You must choose three parameters: an image class or the img tag, the filter used
+    and a percentage value`,
+    important: `This doesn't work with containers!`,
+    example: `<figure class="remove-filter" onmouseover="objFunctions.removeFilteryHover(this, 'sepia', '100%')"><img src="assets/img/akane.jpg" alt="Akane Sleeping" width="100%"></figure>`
   },
   'zoom in': {
     title: `Zoom In`,
@@ -52,5 +53,13 @@ const documentation = {
     want to apply the effect and a size for the zoom scale.`,
     important: `The parent element must be a class or a tag, does not works with IDs`,
     example: `<figure class="zoom-in" onmouseover="objFunctions.hoverNormalScale(this, 1.4)"><img src="assets/img/akane.jpg" alt="Akane Sleeping" width="100%"></figure>`
+  },
+  'slide': {
+    title: `Slide`,
+    description: ``,
+    function: ``,
+    use: ``,
+    important: ``,
+    example: ``
   }
 };

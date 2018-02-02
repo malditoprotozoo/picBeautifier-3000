@@ -7,7 +7,7 @@
 <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/powered-by-electricity.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge" height="30px"></a>
 </p>
 
-_Read this in other languages: [English](readme.en.md), [Portuguese](readme.br.md)._
+_Read this in other languages: [English](readme.en.md)._
 
 picBeautifier 3000 es una librería de JavaScript que servirá para darle múltiples estilos a tus imágenes de manera sencilla. Te ahorrará muchas líneas de código en CSS gracias a nuestras eficientes funciones.
 
@@ -31,6 +31,6 @@ picBeautifier 3000 es una librería de JavaScript que servirá para darle múlti
 Para esta librería utilizamos las siguientes tecnologías:
 
 + Dependencias de desarrollo
- - ESLint 4.15.0
+	- ESLint 4.15.0
 + Dependencias de producción
- - jQuery 3.2.1
+	- jQuery 3.2.1

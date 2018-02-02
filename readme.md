@@ -32,5 +32,6 @@ We used the following technologies:
 
 + Development Dependencies
   - ESLint 4.15.0
+  - Mocha 5.0.0
 + Production Dependencies
   - jQuery 3.2.1

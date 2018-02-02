@@ -1,3 +1,7 @@
+* {
+  transition: all .3s ease-in-out;
+}
+
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
   background: #F5F3EE;
@@ -81,3 +85,4 @@ nav li {
 .card-body p {
   font-weight: 400;
 }
+

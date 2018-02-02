@@ -20,7 +20,7 @@ picBeautifier 3000 is a Javascript library that will facilitate image manipulati
 ### Installation
 
 + jQuery
-	- This library uses <a href="https://jquery.com/download/">jQuery</a>, so you need to added it onto your project.
+	- This library uses [jQuery](https://jquery.com/download/), so you need to added it onto your project.
 
 + CDN
 	- If you want to have our latest features, add this link on your ```script```.
@@ -30,6 +30,16 @@ picBeautifier 3000 is a Javascript library that will facilitate image manipulati
 	- If you rather to stay with our stable version, clone this library onto your project and add the following link onto your script.
 
 	```../src/app.js```
+
+###Usage
+
+You just need to add to your Javascript our functions and use your own classes to apply the effects. Example:
+
+```objFunctions.hoverSlide('figure', '1.3', '30');```
+
+You can check our [documentation](https://malditoprotozoo.github.io/picBeautifier-3000/docs/) for more info.
+
+
 
 ## Built With
 We used the following technologies:

@@ -7,7 +7,7 @@
 <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/powered-by-electricity.svg" alt="forthebadge" height="30px"></a> <a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge" height="30px"></a>
 </p>
 
-_Read this in other languages: [Spanish](readme.md)._
+_Read this in other languages: [Spanish](README.sp.md)._
 
 picBeautifier 3000 is a Javascript library that will facilitate image manipulation, so you can add beautiful effects with just a few lines of code.
 
@@ -51,3 +51,11 @@ We used the following technologies:
   - Mocha 5.0.0
 + Production Dependencies
   - jQuery 3.2.1
+
+## Developed by
+[Victoria Tori Rodríguez](https://github.com/malditoprotozoo)
+
+[Leticia Rodríguez Ferreira](https://github.com/helvette)
+
+## Developed for
+[Laboratoria](http://laboratoria.la/)
